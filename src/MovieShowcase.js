@@ -4,7 +4,7 @@ import movieData from './data.js'
 
 export default class MovieShowcase extends Component {
 
-  generateMovieCards = () => {
+  generateMovieCards = () => { return (
     movieData.map((currentValue) => (
       <MovieCard 
         title={currentValue.title} 
@@ -12,7 +12,7 @@ export default class MovieShowcase extends Component {
         genres = {currentValue.genres}
         poster = {currentValue.poster} />
 
-    )
+    ))
       
     )
   }
